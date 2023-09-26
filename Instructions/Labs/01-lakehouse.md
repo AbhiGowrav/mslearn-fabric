@@ -16,7 +16,7 @@ company's new directive is to improve its decision-making capabilities by analyz
 Here, we explore how a lakehouse in Microsoft Fabric can help address scenarios like this by providing a scalable and flexible data store for files and tables that you can query using 
 SQL.
 
-   ![](./Images/fabric-lakehouse.png)
+   ![](./Images/Get-started-with-lakehouses-in-Microsoft-Fabric.png)
 
 ## Create a Fabric Lakehouse
 
