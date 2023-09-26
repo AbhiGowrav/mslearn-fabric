@@ -1,5 +1,7 @@
 # Lab: Get started with lakehouses in Microsoft Fabric
 
+## Exercise - Create and ingest data with a Microsoft Fabric Lakehouse
+
 ## Overview
 
 The foundation of Microsoft Fabric is a Lakehouse, which is built on top of the OneLake scalable storage layer and uses Apache Spark and SQL compute engines for big data processing. A 
@@ -16,7 +18,7 @@ company's new directive is to improve its decision-making capabilities by analyz
 Here, we explore how a lakehouse in Microsoft Fabric can help address scenarios like this by providing a scalable and flexible data store for files and tables that you can query using 
 SQL.
 
-   ![](./Images/Get-started-with-lakehouses-in-Microsoft-Fabric.png)
+   ![](./Images/Get-started-with-lakehouses-in-Microsoft-Fabric-new.png)
 
 ## Create a Fabric Lakehouse
 
@@ -28,7 +30,7 @@ This lab takes approximately **30** minutes to complete.
 
 > **Note**: You'll need a Microsoft Fabric license to complete this exercise. Complete the previous task to proceed further.
 
-## Create a workspace
+## Task 1: Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -54,7 +56,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
    ![Screenshot of an empty workspace in Power BI.](./Images/new-workspace-u.png)
 
-## Create a lakehouse
+## Task 2: Create a lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
 
@@ -82,7 +84,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    ![](./Images/lakehouse-explorer.png)
    
-## Upload a file
+## Task 3: Upload a file
 
 Fabric provides multiple ways to load data into the lakehouse, including built-in support for pipelines that copy data external sources and data flows (Gen 2) that you can define using visual tools based on Power Query. However one of the simplest ways to ingest small amounts of data is to upload files or folders from your local computer (or lab VM if applicable).
 
@@ -106,7 +108,7 @@ Fabric provides multiple ways to load data into the lakehouse, including built-i
 
 6. Select the **sales.csv** file to see a preview of its contents.
 
-## Explore shortcuts
+## Task 4: Explore shortcuts
 
 In many scenarios, the data you need to work with in your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
@@ -118,7 +120,7 @@ In many scenarios, the data you need to work with in your lakehouse may be store
 
    ![](./Images/shortcuts.png)
 
-## Load file data into a table
+## Task 5: Load file data into a table
 
 The sales data you uploaded is in a file, which data analysts and engineers can work with directly by using Apache Spark code. However, in many scenarios you may want to load the data from the file into a table so that you can query it using SQL.
 
@@ -144,7 +146,7 @@ The sales data you uploaded is in a file, which data analysts and engineers can 
 
     Files for a delta table are stored in *Parquet* format, and include a subfolder named **_delta_log** in which details of transactions applied to the table are logged.
 
-## Use SQL to query tables
+## Task 6: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, a SQL endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
@@ -166,7 +168,7 @@ When you create a lakehouse and define tables in it, a SQL endpoint is automatic
 
     ![Screenshot of a SQL query with results.](./Images/sql-query-u.png)
 
-## Create a visual query
+## Task 7: Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
@@ -190,7 +192,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     ![Screenshot of a Visual query with results.](./Images/visual-query-results-u.png)
 
-## Create a report
+## Task 8: Create a report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
