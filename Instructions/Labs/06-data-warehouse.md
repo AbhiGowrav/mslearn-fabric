@@ -12,7 +12,7 @@ just data engineers.
 
 Here, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
 
-   ![](./Images/data-warehouse.png)
+   ![](./Images/Get-started-with-data-warehouses-in-Microsoft-Fabric.png)
 
 # Analyze data in a data warehouse
 
