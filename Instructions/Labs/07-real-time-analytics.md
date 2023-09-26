@@ -8,7 +8,7 @@ as real-time data from log files or IoT devices.
 In Fabric, you only need a source and a Kusto database to start streaming data in and out of Fabric and writing your queries using KQL. Microsoft Fabric also provides KQL Querysets that 
 can be shared within the tenant and Power BI using what's known as quick create.
 
-   ![](./Images/realtime-analtyics1.png)
+   ![](./Images/Get-started-with-Real-Time-Analytics-in-Microsoft-Fabric.png)
 
 This lab takes approximately **30** minutes to complete.
 
